@@ -5,7 +5,8 @@ RUN apt-get update \
     && apt-get install build-essential \
     cmake \
     libsdl2-dev \
-    libsdl2-ttf-dev -y \
+    libsdl2-ttf-dev \
+    libsdl2-mixer-dev -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
